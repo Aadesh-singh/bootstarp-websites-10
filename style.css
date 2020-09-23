@@ -1,66 +1,243 @@
-.jumbotron{
-    text-align: center;
-    background-color: #fff; 
-    
-}
-.sectionLight{
-    background-color: #eceeef;
-    padding: 2rem;
-}
-img.carousel slide{
-    width: 50%;
-    height: 30%;
-}
-img.sectionDark{
-    width: 0%;
-}
-.sectionDark{
-    background-color: #ccc;
+/*          DEFAULT         */
 
+
+
+nav,
+header,
+footer{
+    display: block;
 }
-div.btn {
+body{
+    line-height: 1;
+    margin: 0;
+}
+nav{
+    width: 100%;
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
     margin: auto;
+    padding-top: 4%;
+    padding-bottom: 4%;
 }
-div.btn button.btn {
-    background-color: red;
-    border-radius: 5px;
+
+.row{
+    width: 100%;
+    display: flex; 
+    flex-wrap: wrap;
+    align-items: center;
 }
-div.left-img {
-    padding-top: 5%;
-    padding-right: 2%;
+.row::after{
+    display: table;
+    clear: both;
+    content: "";
 }
-h5.modal-title {
-    text-align: center;
+.col-1{width: 8.33%;}
+.col-2{width: 16.66%;}
+.col-3{width: 25%;}
+.col-4{width: 33.33%;}
+.col-5{width: 41.66%;}
+.col-6{width: 50%;}
+.col-7{width: 58.33%;}
+.col-8{width: 66.66%;}
+.col-9{width: 75%;}
+.col-10{width: 83.33%;}
+.col-11{width: 91.66%;}
+.col-12{width: 100%;}
+
+*{
+    box-sizing: border-box;
+}
+
+/*                      NAVBAR                      */
+
+
+
+
+nav ul{
+    background-color: #eee;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+nav ul li{
+    list-style: none;
+    float: left;
+}
+ul.topnav li.topnav-right{
+    float: right;
+}
+ul.topnav li a{
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 14px;
+    min-height: 16px;
+    color: #666;
+}
+nav ul li a:hover{
+    background-color: skyblue;
+    color: #fff;
+}
+nav li.dropdownicon{
+    display: none;
+}
+
+
+
+/*                  CUSTOM                       */
+#section-1-gradient{
+    background-image: linear-gradient(to right ,skyblue, blue);
+}
+
+.left-col{
     margin-left: 30%;
 }
-
-div.modal-body {
-    margin: auto;
+.right-col{
+    margin-left: 0%;
 }
-.row-2 {
-    width: 100%;
-    margin-left: 0px;
-    padding: 10px 0px ;
+h1.large{
+    font-size: 30px;
+    padding: 2px;
+    color:#fff;
+    text-shadow: 3px;
 }
-.section3 {
-    padding-top: 10px;
-    width:100%;
-    margin: auto;
+input[type="text"]
+{
+    font-size: 20px;
+    width: 300px;
+    min-width: 100px;
+    padding: 5x;
+    border-radius: 7px;
 }
-button.sec3-btn {
+form h2{
     color: #fff;
-    background: red;
-    padding: 10px 90px;
 }
-.botpad{
-    padding-bottom: 20px;
+img{
+    width: 30%;
+    margin: 0;
+    border: 0;
 }
-.btnpad {
-    margin-left: 10%;
+label{
+    font-size: 35px;
+    font-weight: 600;
 }
-.nut{
-    padding: 12px 12px;
+p{
+    line-height: 1;
+    font-size: 20px;
+    font-weight: 200;
+    text-align: center;
 }
-div.ctr {
-    margin-left: 50px
+article p{
+    line-height: 1.2;
+    font-size: 20px;
+    
+}
+div.box{
+    text-align: center;
+    margin: 24px;
+    padding: 36px 24px 40px 24px;
+    background-color: #fff;
+    box-shadow: 0 0 0 1px rgba(0,0,0,.15), 0  2px 3px 0 rgba(0,0,0,.1); 
+}
+div.icon{
+    width: 100%;
+}
+
+div.col-4{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    border: none;
+    
+}
+.header2large{
+    font-size: 45px;
+    text-align: center; 
+}
+
+button{
+    font-size: 32px;
+    font-weight: 300;
+    background-color: red;
+    color: #fff;
+    padding: 10px 80px;
+    border-radius: 18px;
+    display: block;
+    text-align: center;
+    
+}
+button.learnmore{
+    margin: auto;
+    display: block;
+}
+div.imgsec3 img{
+    display: block;
+    margin: auto;
+    box-shadow: -2px -2px 5px 2px;
+}
+footer.foot{
+    background-color: #666;
+}
+footer.foot h1 {
+    font-size: 35px;
+    color: #fff;
+    text-align: center;
+}
+footer.foot ul{
+    list-style: none;
+    text-align: center;
+    line-height: normal;
+    font-size: 23px;
+    padding-left: 0;
+}
+
+/*                     MOBILE RESPONSIVE                 */
+
+
+
+@media screen and (max-width: 680px){
+    ul.topnav li:not(:nth-child(1)){
+        display: none;
+    }
+    ul.topnav li.dropdownicon{
+        display: block;
+        float: right;
+    }
+    ul.topnav.responsive li.dropdownicon{
+        position: absolute;
+        top: 0;
+        right:0;
+    }
+    ul.topnav.responsive li{
+        display: inline;
+        float: none;
+    }
+    ul.topnav.responsive li a{
+        display: block;
+        text-align: left;
+    }
+    .col-6,
+    .col-4,
+    .col-7,
+    .col-5,
+    .col-3{
+        width: 100%;
+        margin: 0;
+    }
+    div.left-col{
+        margin: 15px;
+    }
+    div.videocontainer{
+        width: 100%;
+        position: relative;
+        margin: 20px;
+        overflow: hidden;
+        overflow: hidden;
+    }
+    
 }
