@@ -1,0 +1,66 @@
+.jumbotron{
+    text-align: center;
+    background-color: #fff; 
+    
+}
+.sectionLight{
+    background-color: #eceeef;
+    padding: 2rem;
+}
+img.carousel slide{
+    width: 50%;
+    height: 30%;
+}
+img.sectionDark{
+    width: 0%;
+}
+.sectionDark{
+    background-color: #ccc;
+
+}
+div.btn {
+    margin: auto;
+}
+div.btn button.btn {
+    background-color: red;
+    border-radius: 5px;
+}
+div.left-img {
+    padding-top: 5%;
+    padding-right: 2%;
+}
+h5.modal-title {
+    text-align: center;
+    margin-left: 30%;
+}
+
+div.modal-body {
+    margin: auto;
+}
+.row-2 {
+    width: 100%;
+    margin-left: 0px;
+    padding: 10px 0px ;
+}
+.section3 {
+    padding-top: 10px;
+    width:100%;
+    margin: auto;
+}
+button.sec3-btn {
+    color: #fff;
+    background: red;
+    padding: 10px 90px;
+}
+.botpad{
+    padding-bottom: 20px;
+}
+.btnpad {
+    margin-left: 10%;
+}
+.nut{
+    padding: 12px 12px;
+}
+div.ctr {
+    margin-left: 50px
+}
